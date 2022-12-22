@@ -1,0 +1,167 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    position: relative;
+    top: 120px;
+}
+
+/* -- Header -- */
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+
+header img {
+    height: 60px;
+    margin: 10px;
+}
+
+#nav-list {
+    display: flex;
+    margin-right: 5px;
+}
+
+#nav-list li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+#nav-list a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+/* -- Banner -- */
+
+#banner {
+    background-image: url(./images/ANA-cover.png);
+    background-size: 1500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 700px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner img {
+    filter: invert(1);
+    width: 50%;
+    max-width: 400px;
+}
+
+/* -- Videos -- */
+
+.vid-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px auto;
+}
+
+.vid {
+    display: flex;
+    justify-content: center;
+}
+
+.vid img {
+    width: 80%;
+}
+
+.vid-text {
+    text-align: center;
+    width: 70%;
+}
+
+/* -- About -- */
+
+
+#about-text {
+    box-sizing: border-box;
+    color: white;
+    background-image: url(./images/ANA-cover.png);
+    background-attachment: fixed;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 30%;
+}
+
+/* -- Contact -- */
+
+#contact {
+    text-align: center;
+    margin: 80px auto 120px;
+}
+
+/* -- Footer -- */
+
+footer {
+    background-image: url(./images/ANA-cover.png);
+    background-size: 1500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+footer #lower {
+    color: white;
+    background-color: black;
+    padding: 1px 15px;
+    width: 100%;
+    height: fit-content;
+}
+
+/* -- Media Queries -- */
+
+@media only screen and (max-width: 900px) {
+    #banner {
+        height: 600px;
+    }
+
+    .vid img {
+        width: 90%;
+    }
+
+    #about-text {
+        padding: 40px 10%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    #nav-list a {
+        font-size: 1rem;
+    }
+
+    #banner {
+        height: 500px;
+    }
+
+    #contact h2, #contact h3 {
+        font-size: .8rem;
+    }
+}
