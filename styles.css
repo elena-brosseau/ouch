@@ -157,6 +157,7 @@ footer #lower {
 
     #banner {
         background-attachment: scroll;
+        background-size: 100%;
     }
 }
 
