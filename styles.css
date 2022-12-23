@@ -11,7 +11,7 @@ a {
 
 main {
     position: relative;
-    top: 120px;
+    top: 100px;
 }
 
 /* -- Header -- */
@@ -56,13 +56,13 @@ header img {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: hidden;
-    border-radius: 15px;
     height: 700px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 #banner img {
@@ -103,10 +103,10 @@ header img {
     color: white;
     background-image: url(./images/ANA-cover.png);
     background-attachment: fixed;
-    border-radius: 15px;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     padding: 40px 30%;
+    border-radius: 15px;
 }
 
 /* -- Contact -- */
@@ -145,11 +145,18 @@ footer #lower {
     }
 
     .vid img {
-        width: 90%;
+        width: 95%;
     }
 
     #about-text {
         padding: 40px 10%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #banner {
+        background-attachment: scroll;
     }
 }
 
