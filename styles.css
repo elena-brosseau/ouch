@@ -51,6 +51,12 @@ header img {
 
 #banner {
     background-image: url(./images/ANA-cover.png);
+    background-size: 1500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 700px;
     width: 95%;
     margin: 0 auto;
     display: flex;
