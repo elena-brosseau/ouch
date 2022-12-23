@@ -153,6 +153,18 @@ footer #lower {
     }
 }
 
+@media only screen and (max-width: 640px) {
+
+    body {
+        background-color: aquamarine;
+    }
+    
+    #banner {
+        background-attachment: scroll;
+        background-size: 100%;
+    }
+}
+
 @media only screen and (max-width: 350px) {
 
     #nav-list a {
