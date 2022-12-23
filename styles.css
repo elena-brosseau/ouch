@@ -50,7 +50,7 @@ header img {
 /* -- Banner -- */
 
 #banner {
-
+    background-image: url(./images/ANA-cover.png);
     background-size: 1500px;
     background-position: center;
     background-attachment: fixed;
