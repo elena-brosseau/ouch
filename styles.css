@@ -52,7 +52,7 @@ header img {
 #banner {
     background-image: url(./images/ANA-cover.png);
     background-size: 1500px;
-    background-position: center;
+    background-position: top;
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -142,6 +142,7 @@ footer #lower {
 @media only screen and (max-width: 900px) {
     #banner {
         height: 600px;
+        background-attachment: scroll;
     }
 
     .vid img {
@@ -150,17 +151,6 @@ footer #lower {
 
     #about-text {
         padding: 40px 10%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-
-    body {
-        background-color: aqua;
-    }
-    
-    #banner {
-        background-attachment: scroll;
     }
 }
 
