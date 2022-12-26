@@ -1,8 +1,9 @@
 
 body {
+    background-color: ghostwhite;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Zilla Slab', Courier, monospace;
 }
 
 a {
@@ -11,7 +12,16 @@ a {
 
 main {
     position: relative;
-    top: 100px;
+    top: 90px;
+}
+
+h2, h3 {
+    letter-spacing: .05rem;
+}
+
+h4 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-weight: normal;
 }
 
 /* -- Header -- */
@@ -20,20 +30,21 @@ header {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-content: center;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 60px;
     z-index: 10;
 }
 
 header img {
-    height: 60px;
+    height: 40px;
     margin: 10px 20px;
 }
 
 #nav-list {
     display: flex;
+    align-items: flex-end;
     margin-right: 10px;
 }
 
@@ -50,25 +61,33 @@ header img {
 /* -- Banner -- */
 
 #banner {
-    background-image: url(./images/ANA-cover.png);
-    background-size: 1500px;
-    background-position: top;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: 700px;
-    width: 95%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#banner .vid-wrapper {
+    height: 600px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner video {
+    height: 130%;
 }
 
 #banner img {
     filter: invert(1);
-    width: 50%;
-    max-width: 400px;
+    width: 60%;
+    max-width: 450px;
+    position: absolute;
+    opacity: 0.8;
 }
 
 /* -- Videos -- */
@@ -78,7 +97,7 @@ header img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: 80px auto;
+    margin: 150px auto;
 }
 
 .vid {
@@ -87,12 +106,12 @@ header img {
 }
 
 .vid img {
-    width: 80%;
+    width: 70%;
 }
 
 .vid-text {
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
 
 /* -- About -- */
@@ -101,37 +120,46 @@ header img {
 #about-text {
     box-sizing: border-box;
     color: white;
-    background-image: url(./images/ANA-cover.png);
+    background-image: url(./images/ANA-grab-2.jpg);
     background-attachment: fixed;
-    width: 95%;
+    background-position: top;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 30%;
+    padding: 80px 20%;
     border-radius: 15px;
 }
 
 /* -- Contact -- */
 
 #contact {
-    text-align: center;
-    margin: 80px auto 120px;
+    color: white;
+    background-color: black;
+    text-align: start;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 350px;
 }
 
-/* -- Footer -- */
+#contact-link {
+    position: relative;
+    bottom: 60px;
+}
 
-footer {
-    background-image: url(./images/ANA-cover.png);
-    background-size: 1500px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    height: 300px;
-    display: flex;
-    align-items: flex-end;
+#contact-text, #contact img {
+    margin: 0 20px;
+}
+
+#contact img {
+    height: 200px;
+    filter: invert(1);
 }
 
 footer #lower {
-    color: white;
-    background-color: black;
+    box-sizing: border-box;
+    color: black;
     padding: 1px 15px;
     width: 100%;
     height: fit-content;
@@ -140,18 +168,27 @@ footer #lower {
 /* -- Media Queries -- */
 
 @media only screen and (max-width: 900px) {
-    #banner {
-        height: 600px;
-        background-attachment: scroll;
-    }
 
     .vid img {
-        width: 95%;
+        width: 90%;
     }
 
     #about-text {
         padding: 40px 10%;
         background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #contact {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 0 180px;
+    }
+
+    #contact-text, #contact img {
+        margin: 20px 0;
     }
 }
 
@@ -161,11 +198,7 @@ footer #lower {
         font-size: 1rem;
     }
 
-    #banner {
-        height: 500px;
-    }
-
     #contact h2, #contact h3 {
-        font-size: .8rem;
+        font-size: 1.2rem;
     }
 }

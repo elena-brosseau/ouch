@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link href="./styles.css" rel="stylesheet">
     <title>OUCH</title>
 </head>
@@ -12,11 +15,16 @@
             <a href="#"><img src="./images/ouch-logo.PNG"></a>
             <ul id="nav-list">
                 <li><a href="#about-link">about</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#contact-link">contact</a></li>
             </ul>
     </header>
     <main>
         <div id="banner">
+            <div class="vid-wrapper">
+                <video playsinline autoplay muted loop>
+                    <source src="./images/sizzle.mp4" type="video/mp4">
+                </video>
+            </div>
             <img src="./images/ouch-logo.PNG">
         </div>
         <div class="vid-section">
@@ -24,9 +32,10 @@
                 <img src="./images/ANA-cover.png">
             </div>
             <div class="vid-text">
-                <h2 id="about-link">A Neighborhood Away</h2>
+                <h2>A Neighborhood Away</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis leo id neque egestas semper sed quis magna. Maecenas consequat augue ac elit faucibus.</p>
             </div>
+            <div id="about-link"></div>
         </div>
         <div id="about">
             <!--<div id="images">
@@ -42,20 +51,24 @@
         </div>
         <div class="vid-section">
             <div class="vid">
-                <img src="./images/ANA-cover.png">
+                <img src="./images/JBN-cover-1.png">
             </div>
             <div class="vid-text">
                 <h2>Just Be Nice</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis leo id neque egestas semper sed quis magna. Maecenas consequat augue ac elit faucibus.</p>
             </div>
         </div>
+        <div id="contact-link"></div>
         <div id="contact">
-            <h2>contact:</h2>
-            <h3>business@ouchproductions.com</h3>
+                <img src="./images/ouch-logo.PNG">
+                <div id="contact-text">
+                    <h2>contact:</h2>
+                    <h3>sophie@ouchproductions.tv</h3>
+                </div>
         </div>
         <footer>
             <div id="lower">
-                <h4>Ouch Productions LLC</h4>
+                <h4>Ouch Productions, LLC</h4>
             </div>
         </footer>
     </main>
