@@ -75,6 +75,7 @@ header img {
 
 #banner video {
     height: 120%;
+    pointer-events: none;
 }
 
 #banner .mid, #banner .mobile {
