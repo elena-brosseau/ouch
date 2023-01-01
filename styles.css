@@ -71,7 +71,7 @@ header img {
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 15px !important;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -119,12 +119,22 @@ footer {
 
 /* -- 6 - Projects -- */
 
+#content {
+    padding: 0 100px;
+}
+
 .vid-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px auto 150px;
+    margin: 100px auto 60px;
+    padding-bottom: 60px;
     max-width: 1000px;
+    border-bottom: 1px solid darkgrey;
+}
+
+.last {
+    border-bottom: none;
 }
 
 .vid {
@@ -173,6 +183,17 @@ footer {
     }*/
 }
 
+@media only screen and (max-width: 600px) {
+
+    #content {
+        padding: 0;
+    }
+
+    .vid-section {
+        border-bottom: none;
+    }
+}
+
 @media only screen and (max-width: 500px) {
     
     #banner .wide {
@@ -217,15 +238,3 @@ footer {
         width: 180px;
     }
 }
-
-@media only screen and (min-width: 600px) {
-
-    #content {
-        padding: 0 100px;
-    }
-
-    .vid img {
-        min-width: 400px;
-    }
-}
-
