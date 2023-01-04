@@ -25,6 +25,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    z-index: 9;
 }
 
 #banner video {
