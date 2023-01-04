@@ -1,0 +1,111 @@
+
+
+/* -- 1 - Global -- */
+
+
+main {
+    position: relative;
+    top: 90px;
+}
+
+
+/* -- 2 - Banner -- */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .vid-wrapper {
+    height: 400px;
+    width: 70%;
+    min-width: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#banner video {
+    height: 120%;
+    pointer-events: none;
+}
+
+#banner .mid, #banner .mobile {
+    display: none;
+}
+
+#banner img {
+    filter: invert(1);
+    width: 250px;
+    position: absolute;
+    opacity: 0.8;
+}
+
+/* -- 3 - Text -- */
+
+#text {
+    display: flex;
+    width: 70%;
+    max-width: 700px;
+    margin: 80px auto;
+}
+
+#about-text, address {
+    margin: 0 20px;
+    font-style: normal;
+}
+
+address p {
+    font-size: 18.72px;
+    font-weight: bold;
+    margin: 18.72px 0;
+    letter-spacing: .06rem;
+}
+
+
+/* -- 4 - Media Queries -- */
+
+
+@media only screen and (max-width: 900px) {
+    
+    #text {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #banner .wide {
+        display: none;
+    }
+
+    #banner .mid {
+        display: block;
+    }
+
+    #banner {
+        min-width: 0;
+        width: 80%;
+    }
+
+    #text {
+        margin: 40px auto;
+    }
+
+    #text h3 {
+        font-size: 4vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #banner img {
+        width: 180px;
+    }
+}
