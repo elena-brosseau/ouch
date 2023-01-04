@@ -1,21 +1,21 @@
 
 
 main {
-    padding: 0 100px;
+    padding: 0 80px;
 }
 
 .vid-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 350px auto;
+    margin: 150px auto;
     padding-bottom: 100px;
-    max-width: 1000px;
-    border-bottom: 1px solid darkgrey;
+    max-width: 1100px;
+    /*border-bottom: 1px solid darkgrey;*/
 }
 
 .first {
-    margin-top: 150px;
+    margin-top: 100px;
 }
 
 /*.last {
@@ -37,13 +37,23 @@ main {
 }
 
 .vid-text {
-    width: 60%;
+    width: 50%;
     max-width: 600px;
     margin: 20px 30px;
 }
 
+.laurels {
+    display: flex;
+}
 
-@media only screen and (max-width: 1100px) {
+.laurels img {
+    filter: invert(1);
+    width: 120px;
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 1200px) {
 
     .vid-section {
         flex-direction: column;
@@ -52,6 +62,7 @@ main {
     }
 
     .vid-text {
+
         min-width: 350px;
     }
 
