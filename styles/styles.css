@@ -1,6 +1,4 @@
-
-
-/* -- 1 - Global -- */
+/* -- HOME PAGE -- */
 
 
 main {
@@ -12,6 +10,7 @@ main {
 /* -- 2 - Banner -- */
 
 #banner {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +18,8 @@ main {
 
 #banner .vid-wrapper {
     height: 400px;
-    width: 70%;
+    width: 80%;
     max-width: 800px;
-    margin: 0 auto;
     overflow: hidden;
     border-radius: 15px;
     display: flex;
@@ -31,16 +29,15 @@ main {
 
 #banner video {
     height: 120%;
-    pointer-events: none;
 }
 
-#banner .mid, #banner .mobile {
+#banner .wide, #banner .mobile {
     display: none;
 }
 
 #banner img {
     filter: invert(1);
-    width: 250px;
+    width: 180px;
     position: absolute;
     opacity: 0.8;
 }
@@ -49,7 +46,8 @@ main {
 
 #text {
     display: flex;
-    width: 70%;
+    flex-direction: column;
+    width: 80%;
     max-width: 700px;
     margin: 80px auto;
 }
@@ -60,46 +58,39 @@ main {
 }
 
 address p {
-    font-size: 18.72px;
+    font-size: 4vw;
     font-weight: bold;
     margin: 18.72px 0;
     letter-spacing: .06rem;
 }
 
 
-/* -- 4 - Media Queries -- */
 
-
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
     
     #text {
-        flex-direction: column;
+        flex-direction: row;
     }
-
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
     
     #banner .wide {
-        display: none;
-    }
-
+            display: block;
+        }
+    
     #banner .mid {
-        display: block;
-    }
+            display: none;
+        }
 
-    #text {
-        margin: 40px auto;
-    }
-
-    #text h3 {
-        font-size: 4vw;
+    address p {
+        font-size: 18.72px;
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 400px) {
 
     #banner img {
-        width: 180px;
+        width: 250px;
     }
 }
