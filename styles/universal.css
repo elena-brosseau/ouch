@@ -5,6 +5,7 @@
 
 body {
     background-color: white;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Zilla Slab', Courier, monospace;
@@ -20,53 +21,56 @@ h1 {
 }
 
 h1, h2 {
+    font-family: Calistoga;
+    font-size: 24px;
     letter-spacing: .05rem;
 }
 
 /* -- Header -- */
 
 header {
-    background-color: transparent;
+    background-color: white;
+    border-bottom: 1.5px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 60px;
     z-index: 10;
 }
 
 header img {
-    height: 40px;
-    margin: 10px 20px;
+    width: 50px;
+    margin: 15px;
 }
 
-#path {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 #path h1 {
-    font-size: 1.5rem;
-    font-weight: normal;
-    opacity: .7;
+    margin: 0 15px;
+}
+
+#location {
+    font-family: 'Zilla Slab', Courier, monospace;
 }
 
 #nav-list {
     display: flex;
-    align-items: flex-end;
-    margin-right: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
 }
 
 #nav-list li {
     list-style: none;
     margin: 0 10px;
+    font-family: Calistoga;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
+
 
 #nav-list a {
     color: black;
-    font-size: 1.5rem;
 }
 
 /* -- Footer -- */
@@ -77,7 +81,7 @@ footer {
     padding: 1px 25px;
     width: 100%;
     height: fit-content;
-    margin-top: 240px;
+    margin-top: 100px;
 }
 
 footer h2 {

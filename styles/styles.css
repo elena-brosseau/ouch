@@ -1,9 +1,8 @@
 /* -- HOME PAGE -- */
 
-
-main {
+main, footer {
     position: relative;
-    top: 90px;
+    top: 110px;
 }
 
 
@@ -18,10 +17,10 @@ main {
 
 #banner .vid-wrapper {
     height: 400px;
-    width: 80%;
+    width: 85%;
     max-width: 800px;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -32,7 +31,7 @@ main {
     height: 120%;
 }
 
-#banner .wide, #banner .mobile {
+#banner .wide {
     display: none;
 }
 
@@ -49,21 +48,24 @@ main {
 #text {
     display: flex;
     flex-direction: column;
-    width: 80%;
-    max-width: 700px;
-    margin: 80px auto;
+    width: 85%;
+    max-width: 750px;
+    margin: 30px auto;
 }
 
-#about-text, address {
-    margin: 0 20px;
-    font-style: normal;
+#about-text {
+    margin-right: 40px;
+}
+
+
+address h2 {
+    margin-bottom: 15px;
 }
 
 address p {
-    font-size: 4vw;
-    font-weight: bold;
-    margin: 18.72px 0;
+    font-style: normal;
     letter-spacing: .06rem;
+    margin-top: 0;
 }
 
 
