@@ -2,7 +2,22 @@
 
 main, footer {
     position: relative;
-    top: 110px;
+    top: 80px;
+}
+
+/* -- NEW -- */
+
+#menu {
+    width: 55px;
+    height: 40px;
+    position: fixed;
+    margin: 10px;
+}
+
+#projects {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 
@@ -17,7 +32,7 @@ main, footer {
 
 #banner .vid-wrapper {
     height: 400px;
-    width: 85%;
+    width: 90%;
     max-width: 800px;
     overflow: hidden;
     border-radius: 25px;

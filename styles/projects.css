@@ -23,8 +23,8 @@ main {
 .vid {
     display: flex;
     justify-content: center;
-    width: 50%;
-    margin: 10px 30px;
+    width: 80%;
+    margin: 10px 0;
 }
 
 .vid img {
@@ -34,9 +34,9 @@ main {
 }
 
 .vid-text {
-    width: 50%;
-    max-width: 600px;
-    margin: 20px 30px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
 }
 
 .laurels {
@@ -54,6 +54,7 @@ main {
 
     .vid-section {
         flex-direction: column;
+        align-items: flex-start;
         padding-bottom: 50px;
     }
 

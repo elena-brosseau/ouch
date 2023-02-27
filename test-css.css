@@ -1,0 +1,250 @@
+/* -- UNIVERSAL -- */
+
+
+body {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', Courier, monospace;
+}
+
+main {
+    padding-top: 80px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 19.92px 0;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h1, h2 {
+    font-family: Calistoga;
+    letter-spacing: .05rem;
+}
+
+
+
+/* -- NEW -- */
+
+#menu {
+    width: 55px;
+    height: 40px;
+    position: fixed;
+    margin: 12px;
+    z-index: 50;
+}
+
+
+/*
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+header p {
+    color: white;
+    background-color: black;
+    font-family: Calistoga;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: .8px;
+    width: fit-content;
+    margin: 15px;
+    padding: 5px 25px;
+    border-radius: 200px;
+}
+
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: black;
+}
+
+header p {
+    color: white;
+    font-family: Calistoga;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: .8px;
+    margin: 10px;
+}
+*/
+
+
+
+
+/* -- 2 - Banner -- */
+
+#banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .vid-wrapper {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 8;
+}
+
+#banner video {
+    height: 120%;
+}
+
+#banner .wide {
+    display: none;
+}
+
+#banner img {
+    filter: invert(1);
+    width: 180px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+/* -- 3 - Text -- */
+
+#text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+#about-text {
+    margin-right: 40px;
+}
+
+
+
+/*
+address p {
+    font-style: normal;
+    letter-spacing: .06rem;
+    margin-top: 0;
+}*/
+
+
+/* -- Clients -- */
+
+
+
+
+#clients {
+    display: flex;
+    margin-top: 20px;
+}
+
+#clients img {
+    height: 50px;
+    filter: brightness(0) saturate(100);
+}
+
+#clients .center {
+    margin: 0 20px;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    
+    #text {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #banner .wide {
+            display: block;
+        }
+    
+    #banner .mid {
+            display: none;
+        }
+
+    address p {
+        font-size: 18.72px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+
+    #banner img {
+        width: 250px;
+    }
+}
+
+
+
+/* -- Projects -- */
+
+
+#projects {
+    margin-top: 200px;
+}
+
+.vid-section {
+    max-width: 600px;
+    padding-bottom: 150px;
+    /*border-bottom: 1px solid darkgrey;*/
+}
+
+.vid img, .vid video {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.vid-text {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.laurels {
+    display: flex;
+}
+
+.laurels img {
+    filter: invert(1);
+    width: 120px;
+    margin: 10px;
+}
+
+
+/* -- Footer -- */
+
+footer {
+    padding: 1px 25px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+footer h2 {
+    color: black;
+    font-size: 16px;
+    margin: 21.28px 0;
+    letter-spacing: normal;
+}
