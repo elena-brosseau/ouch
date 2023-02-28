@@ -56,37 +56,73 @@ header {
     z-index: 10;
     width: 100%;
 }
-*/
 
-/*
-header p {
-    color: white;
-    background-color: black;
-    font-family: Calistoga;
-    font-size: 24px;
-    font-style: italic;
-    letter-spacing: .8px;
-    width: fit-content;
+
+header {
+    display: flex;
+    justify-content: flex-end;
     margin: 15px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    width: fit-content;
+    max-width: 160px;
     padding: 5px 25px;
     border-radius: 200px;
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    transition: max-width .3s ease-in-out;
+}
+
+#contact p {
+    color: white;
+    font-family: Calistoga;
+    font-size: clamp(8px, 4vw, 16px);
+    font-style: italic;
+    letter-spacing: .9px;
+    margin: 3px;
+}
+
+#contact img {
+    display: none;
+    height: 18px;
+    filter: invert();
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#contact img:active {
+    opacity: .5;
 }
 
 
 header {
+    display: flex;
     position: fixed;
     z-index: 10;
     width: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 header p {
-    color: white;
     font-family: Calistoga;
-    font-size: 24px;
+    font-size: 18px;
     font-style: italic;
     letter-spacing: .8px;
     margin: 10px;
+}
+
+header img {
+    display: none;
+    height: 18px;
+    filter: invert();
+    margin-left: 10px;
+    cursor: pointer;
 }
 */
 
@@ -250,7 +286,6 @@ address p {
 /* -- Footer -- */
 
 footer {
-    padding: 1px 25px;
     width: 100%;
     height: fit-content;
     margin-top: 100px;
@@ -259,6 +294,13 @@ footer {
 footer h2 {
     color: black;
     font-size: 16px;
-    margin: 21.28px 0;
+    margin: 20px;
     letter-spacing: normal;
 }
+
+
+
+
+
+
+  
