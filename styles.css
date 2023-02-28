@@ -34,10 +34,6 @@ h1, h2 {
     letter-spacing: .05rem;
 }
 
-
-
-
-
 #entrance {
     background-color: white;
     z-index: 20;
@@ -51,16 +47,11 @@ h1, h2 {
     transition: opacity 1s;
 }
 
-/*
-#entrance p {
-    position: relative;
-    bottom: 5%;
-}
-*/
 
 
 
-/* -- NEW -- */
+
+/* -- Header -- */
 
 header {
     display: flex;
@@ -127,113 +118,10 @@ header {
 }
 
 
-/*
-#menu {
-    width: 55px;
-    height: 40px;
-    margin: 12px 12px 6px;
-    position: fixed;
-    z-index: 16;
-    filter: brightness(0) saturate(100);
-    opacity: .7;
-    cursor: pointer;
-}
-
-header {
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 15;
-}
-
-#contact-us, #other-links {
-    margin: 40px;
-}
-
-
-/*
-header {
-    background-color: white;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-}
-
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px;
-}
-
-#contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .8);
-    width: fit-content;
-    max-width: 160px;
-    padding: 5px 25px;
-    border-radius: 200px;
-    position: fixed;
-    z-index: 10;
-    cursor: pointer;
-    transition: max-width .3s ease-in-out;
-}
-
-#contact p {
-    color: white;
-    font-family: Calistoga;
-    font-size: clamp(8px, 4vw, 16px);
-    font-style: italic;
-    letter-spacing: .9px;
-    margin: 3px;
-}
-
-#contact img {
-    display: none;
-    height: 18px;
-    filter: invert();
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-#contact img:active {
-    opacity: .5;
-}
-
-
-header {
-    display: flex;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    background-color: white;
-}
-
-header p {
-    font-family: Calistoga;
-    font-size: 18px;
-    font-style: italic;
-    letter-spacing: .8px;
-    margin: 10px;
-}
-
-header img {
-    display: none;
-    height: 18px;
-    filter: invert();
-    margin-left: 10px;
-    cursor: pointer;
-}
-*/
 
 
 
-
-/* -- 2 - Banner -- */
+/* -- Banner -- */
 
 #banner {
     margin: 0 auto;
@@ -268,7 +156,7 @@ header img {
     z-index: 9;
 }
 
-/* -- 3 - Text -- */
+/* -- Text -- */
 
 #text {
     display: flex;
@@ -284,17 +172,7 @@ header img {
 
 
 
-/*
-address p {
-    font-style: normal;
-    letter-spacing: .06rem;
-    margin-top: 0;
-}*/
-
-
 /* -- Clients -- */
-
-
 
 
 #clients {
@@ -311,45 +189,6 @@ address p {
     margin: 0 20px;
 }
 
-
-/*
-@media only screen and (min-width: 950px) {
-    
-    header {
-        background-color: transparent;
-    }
-}
-*/
-
-@media only screen and (min-width: 800px) {
-    
-    #text {
-        flex-direction: row;
-    }
-}
-
-@media only screen and (min-width: 500px) {
-    
-    #banner .wide {
-            display: block;
-        }
-    
-    #banner .mid {
-            display: none;
-        }
-
-    address p {
-        font-size: 18.72px;
-    }
-
-}
-
-@media only screen and (min-width: 400px) {
-
-    #banner img {
-        width: 250px;
-    }
-}
 
 
 
@@ -436,6 +275,40 @@ footer h2 {
 }
 
 
+
+
+/* -- Media Queries -- */
+
+
+@media only screen and (min-width: 800px) {
+    
+    #text {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #banner .wide {
+            display: block;
+        }
+    
+    #banner .mid {
+            display: none;
+        }
+
+    address p {
+        font-size: 18.72px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    #banner img {
+        width: 250px;
+    }
+}
 
 
 
