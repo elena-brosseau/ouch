@@ -1,0 +1,316 @@
+/* -- UNIVERSAL -- */
+
+
+body {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Zilla Slab', Courier, monospace;
+}
+
+main {
+    padding-top: 80px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    margin: 19.92px 0;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h1, h2 {
+    font-family: Calistoga;
+    letter-spacing: .05rem;
+}
+
+#entrance {
+    background-color: white;
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s;
+}
+
+
+
+
+
+/* -- Header -- */
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 15;
+}
+
+
+#email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 5px 0 3px;
+    border-radius: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: max-width .6s;
+    max-width: 50px;
+    overflow: hidden;
+}
+
+#email img {
+    filter: invert();
+    height: 15px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#email p {
+    color: white;
+    font-size: 18px;
+    position: relative;
+    bottom: 1px;
+    display: none;
+}
+
+#email.open {
+    padding: 0 20px 0 12px;
+    max-width: 250px;
+}
+
+#email p.open {
+    display: block;
+}
+
+#vimeo {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 20px 15px 15px; 
+    cursor: pointer;
+}
+
+#vimeo img {
+    filter: brightness(0) invert(1);
+    height: 40%;
+}
+
+
+
+
+
+/* -- Banner -- */
+
+#banner {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner .vid-wrapper {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 8;
+}
+
+#banner video {
+    height: 120%;
+}
+
+#banner .wide {
+    display: none;
+}
+
+#banner img {
+    filter: invert(1);
+    width: 180px;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 9;
+}
+
+/* -- Text -- */
+
+#text {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+#about-text {
+    margin-right: 40px;
+}
+
+
+
+/* -- Clients -- */
+
+
+#clients {
+    display: flex;
+    margin-top: 20px;
+}
+
+#clients img {
+    height: 50px;
+    filter: brightness(0) saturate(100);
+}
+
+#clients .center {
+    margin: 0 20px;
+}
+
+
+
+
+/* -- Projects -- */
+
+
+#projects {
+    margin-top: 200px;
+}
+
+.vid-section {
+    max-width: 600px;
+    padding-bottom: 150px;
+    /*border-bottom: 1px solid darkgrey;*/
+}
+
+.vid {
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.vid, .vid a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vid video {
+    width: 100%;
+    transition: .5s;
+}
+
+.vid p {
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-family: Calistoga;
+    font-size: clamp(12px, 5vw, 32px);
+    font-style: italic;
+    letter-spacing: .9px;
+    transition: .5s;
+}
+
+.vid:hover video {
+    transform: scale(1.05);
+    filter: blur(6px) brightness(.9);
+}
+
+.vid:hover p {
+    opacity: 1;
+}
+
+.vid-text {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.laurels {
+    display: flex;
+}
+
+.laurels img {
+    filter: invert(1);
+    width: 120px;
+    margin: 10px;
+}
+
+
+/* -- Footer -- */
+
+footer {
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px;
+}
+
+footer h2 {
+    color: black;
+    font-size: 16px;
+    margin: 20px;
+    letter-spacing: normal;
+}
+
+
+
+
+/* -- Media Queries -- */
+
+
+@media only screen and (min-width: 800px) {
+    
+    #text {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    
+    #banner .wide {
+            display: block;
+        }
+    
+    #banner .mid {
+            display: none;
+        }
+
+    address p {
+        font-size: 18.72px;
+    }
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    #banner img {
+        width: 250px;
+    }
+}
+
+
+
+
+  

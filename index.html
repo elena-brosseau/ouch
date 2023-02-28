@@ -8,30 +8,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-    <link href="./styles/styles.css" rel="stylesheet">
-    <link href="./styles/universal.css" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
     <title>OUCH</title>
     <meta name="description" content="Ouch Productions is a creatively minded company that aims at exploring holistic stories centering three-dimensional characters through a complementary lens.">
 </head>
 <body>
+    <div id="entrance"></div>
     <header>
-        <div id="path">
-            <!--<a href="#"><img src="./assets/ouch-logo.webp" alt="OUCH Productions logo, two crossing band-aids making an X"></a>-->
-            <h1>ouch / <span id="location">home</span></h1>
-        </div>
-        <ul id="nav-list">
-            <li><a href="./pages/projects.html">projects</a></li>
-        </ul>
+       <div id="email">
+            <img src="./assets/mail-icon-2.png" alt="email">
+            <p>sophie@ouchproductions.tv</p>
+            <!--<img src="./assets/copy.png" alt="copy email">-->
+       </div>
+       <a href="https://vimeo.com/user191524765" target="_blank" id="vimeo">
+            <img src="./assets/vimeo-logo.png" alt="vimeo">
+       </a>
     </header>
     <main>
         <div id="banner">
             <div class="vid-wrapper">
-                <video class="wide" playsinline autoplay muted loop>
-                    <source type="video/mp4" src="https://media.githubusercontent.com/media/HelloGonzo/ouch/main/assets/sizzle-wide.mp4">
-                </video>
-                <video class="mid" playsinline autoplay muted loop>
-                    <source type="video/mp4" src="https://media.githubusercontent.com/media/HelloGonzo/ouch/main/assets/sizzle-mid.mp4">
-                </video>
+                <video src="https://media.githubusercontent.com/media/HelloGonzo/ouch/layout-testing/assets/videos/sizzle-wide.mp4" class="wide" playsinline autoplay muted loop></video>
+                <video src="https://media.githubusercontent.com/media/HelloGonzo/ouch/layout-testing/assets/videos/sizzle-mid.mp4" class="mid" playsinline autoplay muted loop></video>
             </div>
             <img src="./assets/ouch-logo.webp"  alt="OUCH Productions logo, two crossing band-aids making an X">
         </div>
@@ -44,14 +41,65 @@
                     We provide creative writing, video/film production, and post services tailored to your brand image.
                 </p>
             </div>
-            <address>
-                <h2>contact:</h2>
-                <p>sophie@ouchproductions.tv</p>
-            </address>
+            <div id="selected">
+                <h2>selected clients:</h2>
+                <div id="clients">
+                    <img src="./assets/PHILIPPINES WPRO logo 2022 BK.png" alt="WHO Philippines">
+                    <img class="center" src="./assets/SOM_Family.Medicine.png" alt="">
+                    <img src="./assets/DGHLogoCenteredStackedwithSchools-purple.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="projects">
+            <div class="vid-section first">
+                <div class="vid">
+                    <a href="https://vimeo.com/792414141" target="_blank">
+                        <video id="ANA-vid" src="https://media.githubusercontent.com/media/HelloGonzo/ouch/layout-testing/assets/videos/ana-clip.mp4" playsinline autoplay muted loop></video>
+                        <p>watch on vimeo</p>
+                    </a>  
+                </div>
+                <div class="vid-text">
+                    <h2>A Neighborhood Away</h2>
+                    <p>…follows two close friends and lovers on the night before one of the girls, who is struggling with internalized homophobia and an inability to commit to a relationship with a girl, moves out of their shared apartment.
+                    <br><br>
+                    The film is intentionally ambiguous as it tackles the hardships of navigating relationships from both ends of a coming out timeline. This film seeks to show truth in the stolen glances and hidden moments of a woman loving woman relationship growing from a deep female friendship. 
+                    </p>
+                    <div class="laurels">
+                        <img src="./assets/NYSFF-laurel.webp" alt="New York Short Film Festival 2022 Official Selection laurel">
+                        <img src="./assets/EVQFF-laurel.webp" alt="East Village Queer Film Festival 2022 Official Selection laurel">
+                    </div>
+                </div>
+            </div>
+            <div class="vid-section">
+                <div class="vid">
+                    <video id="JBN-vid" src="https://media.githubusercontent.com/media/HelloGonzo/ouch/layout-testing/assets/videos/jbn-clip.mp4" playsinline autoplay muted loop></video>
+                    <p>coming soon</p>
+                </div>
+                <div class="vid-text">
+                    <h2>Just Be Nice!</h2>
+                    <p>A satirical office comedy web-series that explores the absurdity of unpaid internships and being a woman in a male dominated work environment.
+                    <br><br>
+                    When Beth starts her very first job in corporate America, her excitement to join the working world quickly dwindles as she meets a cast of characters that make her realize success is not what she thought it would look like.</p>
+                </div>
+            </div>
+            <div class="vid-section last">
+                <div class="vid">
+                    <a href="https://vimeo.com/793208158" target="_blank">
+                        <video id="MATF-vid" src="https://media.githubusercontent.com/media/HelloGonzo/ouch/layout-testing/assets/videos/matf-clip.mp4" playsinline autoplay muted loop></video>
+                        <p>watch on vimeo</p>
+                    </a>
+                </div>
+                <div class="vid-text">
+                    <h2>Mae at the Funeral</h2>
+                    <p>When Mae is given the daunting task of reading her grandfather's eulogy, she finds herself spiraling with only her cousin and a joint for comfort.</p>
+                </div>
+            </div>
         </div>
     </main>
+
     <footer>
         <h2>Ouch Productions, LLC</h2>
     </footer>
+    <script src="./scripts.js"></script>
 </body>
 </html>
