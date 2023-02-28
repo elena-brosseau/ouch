@@ -18,7 +18,7 @@ function startPreview(video) {
   
 startPreview(anaVid)
 let anaLoop = setInterval(() => {startPreview(anaVid)}, 5900)
-*/
+
 
 
 const contact = document.querySelector('#contact'),
@@ -44,4 +44,13 @@ function closeContact() {
 copy.onclick = () => {
   navigator.clipboard.writeText(email.innerHTML);
   closeContact();
+}
+*/
+
+
+const entrance = document.querySelector('#entrance')
+
+
+window.onload = () => {
+  entrance.style.opacity = '0';
 }
