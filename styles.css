@@ -85,7 +85,7 @@ header {
 
 #email p {
     color: white;
-    font-size: 18px;
+    font-size: clamp(12px, 6vw, 18px);
     position: relative;
     bottom: 1px;
     display: none;
@@ -248,14 +248,25 @@ header {
     margin: 40px auto;
 }
 
+.vid-text ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.vid-text li {
+    margin-right: 7px;
+}
+
 .laurels {
     display: flex;
 }
 
 .laurels img {
-    filter: invert(1);
-    width: 120px;
-    margin: 10px;
+    filter: invert();
+    width: 100px;
+    margin: 2%;
 }
 
 
@@ -307,6 +318,11 @@ footer h2 {
 
     #banner img {
         width: 250px;
+    }
+
+    .laurels img {
+        width: 120px;
+        margin: 10px;
     }
 }
 
