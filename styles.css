@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    padding-top: 80px;
+    padding-top: 85px;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
@@ -55,21 +55,38 @@ h1, h2 {
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
     z-index: 15;
 }
 
+.header-item {
+    margin: 0 15px;
+    padding: 0 20px;
+}
 
-#email {
+.header-item, #email {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 35px;
+    border-radius: 1000px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+#email {
     padding: 0 5px 0 3px;
-    border-radius: 200px;
     background-color: rgba(0, 0, 0, 0.8);
     transition: max-width .6s;
     max-width: 50px;
@@ -84,8 +101,7 @@ header {
 }
 
 #email p {
-    color: white;
-    font-size: clamp(12px, 6vw, 18px);
+    font-size: clamp(12px, 6vw, 16px);
     position: relative;
     bottom: 1px;
     display: none;
@@ -101,8 +117,8 @@ header {
 }
 
 #vimeo {
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
@@ -330,3 +346,61 @@ footer h2 {
 
 
   
+/* New Projects */
+
+.projects-banner {
+    height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/poster_2.JPEG);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects-text {
+    margin: 30px 0;
+}
+
+.projects-text h1 {
+    font-size: 20vw;
+    margin: 0;
+    width: 300px;
+    line-height: 20vw;
+}
+
+.projects-text p {
+    width: 80%;
+    line-height: 150%;
+}
+
+
+
+@media screen and (min-width: 600px) {
+
+    .projects-text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .projects-text h1 {
+        font-size: 72px;
+        margin: 0;
+        width: 300px;
+        line-height: 70px;
+    }
+    
+    .projects-text p {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    .projects-banner {
+        background-image: url(./assets/gummy-worms-poster-wide.png);
+        background-size: 140%;
+    }
+}
