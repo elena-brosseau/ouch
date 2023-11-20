@@ -1,12 +1,12 @@
 
 
 
-const entrance = document.querySelector('#entrance');
+// const entrance = document.querySelector('#entrance');
 
-window.onload = () => {
-  entrance.style.opacity = '0';
-  setTimeout(() => {entrance.style.display = 'none'}, 1000);
-}
+// window.onload = () => {
+//   entrance.style.opacity = '0';
+//   setTimeout(() => {entrance.style.display = 'none'}, 1000);
+// }
 
 
 
